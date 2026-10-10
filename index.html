@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About me</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="float-layer" id="floatLayer"></div>
+  <div class="toast" id="toast"></div>
+
+  <nav id="nav">
+    <div class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">Ade Putra.P</div>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#music">music</a></li>
+      <li><a href="#foryou">for you</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <header>
+      <div class="glitch-wrap">
+        <h1 class="glitch" data-text="hey.">hey.</h1>
+      </div>
+      <p class="tagline">Orang biasa aja</p>
+      <div class="scroll-hint" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">↓</div>
+    </header>
+
+    <section id="about" class="reveal">
+      <div class="section-label">about</div>
+      <h2 class="float-heading">Sedikit tentang aku</h2>
+      <div class="about-text">
+        <p>Aku orangnya simpel sih. Lah kan simple? Nunggu apa lagi??</p>
+        <p>Website ini adalah bentuk pelarian diri dari realita.</p>
+      </div>
+    </section>
+
+    <section id="music" class="reveal">
+      <div class="section-label">music</div>
+      <h2 class="float-heading">Lagu yang aku suka putar</h2>
+      <div class="music-list" id="musicList"></div>
+
+      <div class="lyric-box" id="lyricBox">
+        <div class="lyric-header">
+          <span class="lyric-title" id="lyricTitle"></span>
+          <button class="lyric-close" id="lyricClose" title="Tutup">×</button>
+        </div>
+        <div class="lyric-text" id="lyricText"></div>
+      </div>
+    </section>
+
+    <section id="foryou" class="reveal">
+      <div class="section-label">for you</div>
+      <h2 class="float-heading">Buat yang lagi baca</h2>
+      <div class="foryou-box">
+        <p class="foryou-msg" id="foryouMsg">
+          Kalau lo lagi ngerasa berat, boleh duduk sebentar di sini. Gak usah buru-buru.
+        </p>
+        <div class="foryou-actions">
+          <button class="btn primary" id="btnNext">pesan lain</button>
+          <button class="btn" id="btnCopy">salin</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="reveal">
+      dibuat sendiri
+    </footer>
+  </div>
+
+  <script src="music.js"></script>
+  <script src="foryou.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
